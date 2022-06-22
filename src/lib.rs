@@ -215,6 +215,8 @@ pub trait PrimeField: Field + From<u64> {
         !self.is_odd()
     }
 
+    fn char() -> Self;
+
     /// How many bits are needed to represent an element of this field.
     const NUM_BITS: u32;
 
