@@ -1203,7 +1203,7 @@ fn prime_field_impl(
                 ::ff::derive::subtle::Choice::from((r.0[0] & 1) as u8)
             }
 
-            fn char() -> #repr {
+            fn char() -> Self {
                 MODULUS
             }
 
